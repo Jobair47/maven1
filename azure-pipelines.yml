@@ -29,4 +29,8 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'java -jar /home/azureuser/myagent/_work/1/s/FunctionTesting/testing.jar'
+    script: 'java -jar /home/azureuser/myagent/_work/1/s/FunctionTesting/testing.jar' 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'scp /home/azureuser/myagent/_work/1/s/webapp/target/webapp.war azureuser@20.51.110.231:/var/lib/tomcat10/webapps/prod.war'
