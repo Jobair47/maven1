@@ -29,4 +29,4 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'java -jar /home/azureuser/myagent/_work/1/s/FunctionalTesting/testing.jar'
+    script: 'java -jar /home/azureuser/myagent/_work/1/s/FunctionTesting/testing.jar'
